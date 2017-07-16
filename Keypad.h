@@ -2,7 +2,7 @@
  * Keypad.h
  *
  * Created: 6/15/2017 8:03:33 PM
- *  Author: MOHAMED YOUSEF
+ * Author: MOHAMED YOUSEF
  */ 
 
 
@@ -15,9 +15,9 @@
 typedef unsigned char byte;
 
 #define SET_BIT(reg, index) reg |= (1 << index)
-#define CLR_BIT(reg, index)	reg &= (~(1 << index))
-#define GET_BIT(reg, index)((reg >> index) & 0x01)
-#define TOG_BIT(reg, index)	reg ^= (1 << index)
+#define CLR_BIT(reg, index) reg &= (~(1 << index))
+#define GET_BIT(reg, index) ((reg >> index) & 0x01)
+#define TOG_BIT(reg, index) reg ^= (1 << index)
 
 #define Kpad_ddr  DDRD
 #define Kpad_port PORTD
